@@ -1,0 +1,82 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    padding: 0 2rem;
+  }
+}
+
+/* Meus CSS */
+
+.nav-p {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-t {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 0rem 10rem;
+}
+
+.input {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-left: 1rem;
+  border-left: 1px solid var(--color-border);
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+}
+
+.btn:hover {
+  background-color: hsla(160, 100%, 37%, 0.2);
+}
+
+.btn-group {
+  display: flex;
+}
